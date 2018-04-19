@@ -1,0 +1,46 @@
+%Output file name
+outName=teste
+%problem: problem name
+problem=dtlz4
+%leader selection strategy (rnd, cd, sigma, nwsum)
+leader=cd
+%archiver strategy (rnd, cd, ideal, mga, r2, hv, unbounded)
+archiver=cd
+%number of objectives
+objectiveNumber=3
+%number of particles on single swarm
+population=1
+%repository size per swarm
+repository=1
+%swarm Number
+swarms=1
+%number of iterations
+iterations=100
+%number of independent runs
+runs=1
+%Which algorithm is to be run (smpso, hmopso, imulti, cmulti, cmaes-mopso, moead, pareto-cmaes)
+algorithm=cmaes-mopso
+%number of partitioning iterations //original = 5
+partIterations=1
+%archiving method used by the sub-swarms (rnd, cd, ideal, mga, r2, unbounded) -- if decomposition (pbi, tch, wcp, wsum, r-ideal) -- if cmaes (larger-likelihood, smaller-likelihood, larger-distance, smaller-distance)
+archSubSwarms=pbi
+%total population used considering all the sub swarms in the multi-swarm phase
+subSwarmTotalPopulation=1
+%number of diversity iterations -- the single swarm iterations used to form the basis front to be split
+diversityIterations=0
+%clustering method used in the K-means of i-multi and c-multi (decision, objectives, both)
+clusteringType=objectives
+%truncation method used in the i-multi and c-multi truncation (imulti, rdmInSwarm, extremes, random)
+truncType=extremes
+%distance type used in the k-means clustering of i-multi and c-multi (euclidean, tchebycheff, minkowski0.5, minkowski4)
+clusteringDistance=euclidean
+%type of weight distribution used in the CMA-ES algorithm (equal, log, linear, metric)
+weightDistribution=log
+%non-dominated solution set to be used in the CMA-ES learning (repository, population, both, matrix)
+solSet=both
+%ranking method used in the CMA-ES learning (cd, hv, r2)
+cmaRanking=hv
+%size of the neighborhood for MOEA/D - minimum 1, 0=dynamic(distance based)
+neighborhoodSize=20
+%metric used to update the neighborhood at each iteraion (1-7 chooses strategy, other values does nothing)
+updateNeighborhoodMetric=0
